@@ -1,0 +1,20 @@
+{
+  "name": "pits",
+  "version": "0.0.0",
+  "description": "Free student labour",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/javascript/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJTootell/PITS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AJTootell/PITS/issues"
+  },
+  "homepage": "https://github.com/AJTootell/PITS#readme"
+}
