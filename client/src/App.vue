@@ -11,6 +11,10 @@
 		-moz-osx-font-smoothing: grayscale;
 		color: #2c3e50;
 	}
+
+	.cursor-pointer {
+		cursor: pointer!important;
+	}
 </style>
 
 <script>
