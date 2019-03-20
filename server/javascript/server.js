@@ -10,6 +10,6 @@ app.use('/', express.static('client/public'));
 app.set('views', 'server/views');
 app.set('view engine', 'hbs');
 
-app.use('/func', routes);
+app.use('/', routes);
 
 app.listen(process.env.PORT || 5000);
