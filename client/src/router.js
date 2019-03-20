@@ -8,6 +8,10 @@ export default new Router({
 	base: process.env.BASE_URL,
 	routes: [
 		{ path: '/', name: 'home', component: () => import('./views/home.vue') },
-		{ path: '/configure', name: 'configure', component: () => import('./views/configure.vue') }
+		{ path: '/configure', name: 'configure', component: () => import('./views/configure.vue') },
+		{ path: '/authenticate', name: 'authenticate', component: () => import('./views/authenticate.vue') },
+		{ path: '/logout', name: 'logout', component: () => import('./views/logout.vue') },
+
+		{ path: '*', component: () => import('./views/404') }
 	]
 })
