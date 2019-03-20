@@ -4,8 +4,8 @@
   "description": "Free student labour",
   "main": "server/index.js",
   "scripts": {
-    "start": "cd client && npm run build && cd ../ && npm run server",
-    "server": "node server/javascript/server.js",
+    "start": "node server/javascript/server.js",
+    "build": "cd client && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
