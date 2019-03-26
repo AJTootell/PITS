@@ -7,8 +7,7 @@ const UserSchema = new mongoose.Schema({
   id: {
     type: String,
     unique: true,
-    required: true,
-    trim: true
+    required: true
   },
   email: {
     type: String,
@@ -17,11 +16,11 @@ const UserSchema = new mongoose.Schema({
     trim: true
   },
   personality: [{
-      extraversion: Number,
-      agreeableness: Number,
-      conscientiousness: Number,
-      emotional_stability: Number,
-      openness: Number
+      extraversion: {type: Number, default: 0},
+      agreeableness: {type: Number, default: 0},
+      conscientiousness: {type: Number, default: 0},
+      emotional_stability: {type: Number, default: 0},
+      openness: {type: Number, default: 0}
        }]
 });
 
