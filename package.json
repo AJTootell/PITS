@@ -4,8 +4,9 @@
   "description": "Free student labour",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/javascript/server.js",
-    "build": "cd client && npm run build",
+    "start": "vue-cli-service build && node server.js",
+    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,22 @@
   "homepage": "https://github.com/AJTootell/PITS#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "mongoose": "^5.4.19"
+    "mongoose": "^5.4.19",
+    "vue": "^2.6.6",
+    "vue-google-signin-button": "^1.0.2",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-session": "^1.0.0",
+    "vue-template-compiler": "^2.5.21"
   }
 }

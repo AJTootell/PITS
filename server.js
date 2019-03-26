@@ -13,3 +13,5 @@ app.set('view engine', 'hbs');
 app.use('/', routes);
 
 app.listen(process.env.PORT || 5000);
+
+console.log('Server Started on port 5000');
