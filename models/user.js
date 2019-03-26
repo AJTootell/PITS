@@ -1,6 +1,4 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
-const saltRounds = 10;
 
 // Set schema for users
 const UserSchema = new mongoose.Schema({
