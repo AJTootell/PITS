@@ -2,9 +2,9 @@ const
 express = require('express'),
 app = express(),
 path = require('path'),
-routes = require(path.join(__dirname, '../routes'));
+routes = require(path.join(__dirname, 'server/routes.js'));
 
-app.use('/', express.static('client/public'));
+app.use('/', express.static('client/dist'));
 
 // view engine setup
 app.set('views', 'server/views');
